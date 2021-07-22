@@ -2,12 +2,12 @@
 
 ### Porque existe esse projeto?
 
-É muito comum termos documentações para diversos nives dentro do projeto, normalmente, e comum ter um readme contendo as informações, porem, tais informações não fica acessível aos stakeholders, dificultando o acesso a informação.
+É muito comum termos documentações para diversos nives dentro do projeto, normalmente, é comum ter um readme contendo as informações, porem, tais informações não fica acessível aos stakeholders, dificultando o acesso a informação.
 Tambem não é incomum usar uma wiki e ao migrar descobrir que não sera uma tarefa fácil.
 
 ### Como o projeto resolve os problemas?
 
-Resolve o problema permitindo com que todo a documentação fique junto do projeto, mas que seja possível disponibilizados por outras ferramentas
+Resolve o problema permitindo com que todo a documentação fique junto do projeto, mas que seja possível desponibilizar para outras ferramentas
 
 ### O que foi feito
 
