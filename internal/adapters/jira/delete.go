@@ -18,5 +18,3 @@ func (j *jira) Delete(metaData *app.MetaData) bool {
 	}
 	return true
 }
-
-// https://docs.atlassian.com/atlassian-confluence/REST/6.6.0/#content-getContentById

@@ -15,6 +15,7 @@ func applyChanges(changes []app.MetaData) {
 		}
 	}
 
+	// Organize execution order
 	for _, md := range changes {
 		parentNode := getExecution(md.Parent)
 
@@ -29,13 +30,13 @@ func applyChanges(changes []app.MetaData) {
 	}
 
 	for _, executionNode := range executionMap {
-		execute(executionNode)
+		executeChanges(executionNode)
 	}
 }
 
-func execute(executionNode *model) {
+func executeChanges(executionNode *model) {
 	if executionNode.dependsOn != nil {
-		execute(executionNode.dependsOn)
+		executeChanges(executionNode.dependsOn)
 	}
 	if executionNode.IsRoot() || executionNode.metaData.Status == app.STATUS_CREATED {
 		executionNode.hasResult = true
@@ -44,15 +45,15 @@ func execute(executionNode *model) {
 		return
 	}
 
-	syncPage(&executionNode.metaData)
+	execute(&executionNode.metaData)
 
 	executionNode.hasResult = true
 	for _, trigger := range executionNode.triggers {
-		execute(trigger)
+		executeChanges(trigger)
 	}
 }
 
-func syncPage(metaData *app.MetaData) {
+func execute(metaData *app.MetaData) {
 	switch metaData.Status {
 	case app.STATUS_DELETED:
 
