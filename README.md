@@ -1,6 +1,6 @@
 # wikifier
 
-### Porque existe esse projeto?
+### Por que existe esse projeto?
 
 É muito comum termos documentações para diversos nives dentro do projeto, normalmente, é comum ter um readme contendo as informações, porem, tais informações não fica acessível aos stakeholders, dificultando o acesso a informação.
 Tambem não é incomum usar uma wiki e ao migrar descobrir que não sera uma tarefa fácil.
