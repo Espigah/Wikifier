@@ -7,7 +7,7 @@ Tambem não é incomum usar uma wiki e ao migrar descobrir que não sera uma tar
 
 ### Como o projeto resolve os problemas?
 
-Resolve o problema permitindo com que todo a documentação fique junto do projeto, mas que seja possível desponibilizar para outras ferramentas
+Resolve o problema permitindo com que todo a documentação fique junto do projeto, mas que seja possível disponibilizar para outras ferramentas
 
 ### O que foi feito
 
